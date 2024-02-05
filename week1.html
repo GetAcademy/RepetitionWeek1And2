@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header1">Terje</h1>
+    <ul>
+        <li id="bullet1">Terje</li>
+        <li id="bullet2">Terje</li>
+        <li id="bullet3">Terje</li>
+    </ul>
+    <button onclick="swapToPer()">Per</button>
+
+    <script>
+        function swapToPer() {
+            document.getElementById('bullet1').innerHTML += 'Per';
+            document.getElementById('bullet2').innerHTML += 'Per';
+            document.getElementById('bullet3').innerHTML += 'Per';
+        }
+    </script>
+
+</body>
+
+</html>

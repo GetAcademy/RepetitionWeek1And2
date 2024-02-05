@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header1">Terje</h1>
+    <ul>
+        <li id="bullet1">Terje</li>
+        <li id="bullet2">Terje</li>
+        <li id="bullet3">Terje</li>
+    </ul>
+
+    <button onclick="swap('Per')">Per</button>
+    <button onclick="swap('Pål')">Pål</button>
+    <button onclick="swap('Espen')">Espen</button>
+
+    <!-- 
+    <button onclick="swapToPer()">Per</button>
+    <button onclick="swapToPål()">Pål</button>
+    <button onclick="swapToEspen()">Espen</button>
+    -->
+
+    <script>
+        function swap(name) {
+            document.getElementById('bullet1').innerHTML = name;
+            document.getElementById('bullet2').innerHTML = name;
+            document.getElementById('bullet3').innerHTML = name;
+        }
+
+        // function swapToPer() {
+        //     document.getElementById('bullet1').innerHTML = 'Per';
+        //     document.getElementById('bullet2').innerHTML = 'Per';
+        //     document.getElementById('bullet3').innerHTML = 'Per';
+        // }
+
+        // function swapToPål() {
+        //     document.getElementById('bullet1').innerHTML = 'Pål';
+        //     document.getElementById('bullet2').innerHTML = 'Pål';
+        //     document.getElementById('bullet3').innerHTML = 'Pål';
+        // }
+
+        // function swapToEspen() {
+        //     document.getElementById('bullet1').innerHTML = 'Espen';
+        //     document.getElementById('bullet2').innerHTML = 'Espen';
+        //     document.getElementById('bullet3').innerHTML = 'Espen';
+        // }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+
+    <script>
+        let showedContentCount = 0;
+        /*
+        let number; // deklarere = sette navn på en skuff
+        number = 1; // tilordne = legge verdi inn i skuff
+        document.body.innerHTML = number; // lese = hente verdi ut av skuff
+        */
+
+        showContent('Terje');
+
+        function showContent(name) {
+            // showedContentCount = showedContentCount + 1;
+            // showedContentCount += 1;
+            showedContentCount++;
+
+            let style = '';
+            if (showedContentCount > 10) {
+                style = `background-color: rgb(${showedContentCount * 10},${showedContentCount * 10},${255 - showedContentCount * 10})`;
+            }
+
+            document.getElementById('app').innerHTML = /*HTML*/`            
+                <div style="${style}">
+                    <h1 id="header1">${name}</h1>
+                    <ul>
+                        <li id="bullet1">${name}</li>
+                        <li id="bullet2">${name}</li>
+                        <li id="bullet3">${name}</li>
+                    </ul>
+                    <p>Denne funksjonen har kjørt ${showedContentCount} ganger.</p>
+
+                    <button onclick="showContent('Per')">Per</button>
+                    <button onclick="showContent('Pål')">Pål</button>
+                    <button onclick="showContent('Espen')">Espen</button>
+                </div>                        
+            `;
+        }
+    </script>
+
+</body>
+
+</html>

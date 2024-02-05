@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+
+    <script>
+        showContent('Terje');
+
+        function showContent(name){
+            document.getElementById('app').innerHTML = /*HTML*/`            
+                <h1 id="header1">${name}</h1>
+                <ul>
+                    <li id="bullet1">${name}</li>
+                    <li id="bullet2">${name}</li>
+                    <li id="bullet3">${name}</li>
+                </ul>
+
+                <button onclick="showContent('Per')">Per</button>
+                <button onclick="showContent('Pål')">Pål</button>
+                <button onclick="showContent('Espen')">Espen</button>                        
+            `;
+        }
+
+        // function swap(name) {
+        //     document.getElementById('bullet1').innerHTML = name;
+        //     document.getElementById('bullet2').innerHTML = name;
+        //     document.getElementById('bullet3').innerHTML = name;
+        // }
+
+
+    </script>
+
+</body>
+
+</html>
